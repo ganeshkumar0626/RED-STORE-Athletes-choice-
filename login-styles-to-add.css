@@ -1,0 +1,190 @@
+
+.login-section{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#fff,#ffd6d6);
+    padding: 60px 20px;
+}
+
+/* Login card */
+.login-box{
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 45px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+}
+
+.login-title{
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.login-subtitle{
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Success message box shown on valid login */
+.success-msg{
+    display: none;
+    text-align: center;
+    color: #2e7d32;
+    font-size: 14px;
+    margin-bottom: 20px;
+    background: #e8f5e9;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #a5d6a7;
+}
+
+/* Form field spacing */
+.form-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label{
+    display: block;
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus{
+    border-color: #ff523b;
+}
+
+/* Show/Hide password toggle text */
+.toggle-pass{
+    position: absolute;
+    right: 14px;
+    top: 36px;
+    font-size: 12px;
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+.toggle-pass:hover{
+    color: #ff523b;
+}
+
+/* Validation error text under inputs */
+.error-msg{
+    color: #ff523b;
+    font-size: 12px;
+    margin-top: 6px;
+    display: none;
+}
+
+/* Remember me + Forgot password row */
+.form-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+.form-options label{
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.form-options a{
+    color: #ff523b;
+}
+.form-options a:hover{
+    text-decoration: underline;
+}
+
+/* Login button - reuses existing .btn but full width */
+.login-btn{
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* OR divider line */
+.divider{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0;
+    color: #aaa;
+    font-size: 12px;
+}
+.divider::before, .divider::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+/* Social login buttons */
+.social-login{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.social-btn{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+.social-btn:hover{
+    border-color: #ff523b;
+    color: #ff523b;
+}
+
+/* Sign up text at bottom */
+.signup-text{
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+.signup-text a{
+    color: #ff523b;
+    font-weight: 500;
+}
+.signup-text a:hover{
+    text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px){
+    .login-box{
+        padding: 35px 25px;
+    }
+}
